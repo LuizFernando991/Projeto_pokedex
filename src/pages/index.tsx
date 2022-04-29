@@ -1,3 +1,5 @@
+import { Home } from '../templates/Home'
+
 export default function Index() {
-    return <>Oi</>
+    return <Home />
 }
