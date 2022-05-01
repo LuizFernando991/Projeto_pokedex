@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { LogoTitle } from '../LogoTitle'
 
 import * as Styled from './styles'
 
@@ -15,9 +16,7 @@ export function Navbar() {
                             height="30"
                             alt="PokeNext"
                         />
-                        <h1>
-                            Poke<span>Next</span>
-                        </h1>
+                        <LogoTitle />
                     </Styled.LogoContainer>
                 </a>
             </Link>

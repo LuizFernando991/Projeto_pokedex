@@ -4,16 +4,12 @@ import { Navbar } from '.'
 export default {
     title: 'Navbar',
     component: Navbar,
-    args: {
-        text: 'PokeNext',
-        srcImg: '/assets/images/pokeball.png',
-    },
 } as Meta
 
-export const Template = (args) => {
+export const Template = () => {
     return (
         <div>
-            <Navbar {...args} />
+            <Navbar />
         </div>
     )
 }

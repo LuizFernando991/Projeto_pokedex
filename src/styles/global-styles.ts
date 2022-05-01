@@ -16,7 +16,7 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 1.6rem;
         font-family: ${({ theme }) => theme.font.family.default};
         background: rgb(165,102,254);
-        background: linear-gradient(29deg, rgba(165,102,254,1) 0%, rgba(214,6,6,1) 100%);
+        background: linear-gradient(35deg, rgba(218,103,255,1) 0%, rgba(214,6,6,1) 100%);
 
     }
 
@@ -32,6 +32,9 @@ export const GlobalStyles = createGlobalStyle`
 
     a {
         text-decoration: none;
+    }
+    li {
+        list-style: none;
     }
     body::-webkit-scrollbar {
         width: 8px;

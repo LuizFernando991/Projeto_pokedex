@@ -1,7 +1,7 @@
 export const theme = {
     colors: {
         primaryColor: '#333333',
-        secondaryColor: '#d60606',
+        secondaryColor: '#E33D33',
         white: '#FFFFFF',
     },
     font: {
@@ -12,7 +12,7 @@ export const theme = {
         sizes: {
             xsmall: '8rem',
             small: '1.6rem',
-            medium: '2.4rem',
+            medium: '2rem',
             large: '3.2rem',
             xlarge: '4.0rem',
             xxlarge: '4.8rem',

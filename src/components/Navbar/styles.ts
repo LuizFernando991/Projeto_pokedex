@@ -2,27 +2,35 @@ import styled from 'styled-components'
 
 export const NavContainer = styled.nav`
     width: 100%;
-    height: 80px;
+    height: 90px;
     background-color: transparent;
     padding: 0 20px 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul li a {
+        color: ${({ theme }) => theme.colors.white};
+        font-size: ${({ theme }) => theme.font.sizes.medium};
+        margin-left: 20px;
+    }
+
+    ul li {
+        transform: scale(0.9);
+        transition: all ease-in 0.2s;
+    }
+
+    ul li:hover {
+        transform: scale(1);
+    }
 `
 export const LogoContainer = styled.div`
     display: flex;
     align-items: center;
-    h1 {
-        color: ${({ theme }) => theme.colors.white};
-        margin-left: 5px;
-        text-shadow: ${({ theme }) =>
-            `2px 0 0 ${theme.colors.secondaryColor}, -2px 0 0${theme.colors.secondaryColor}, 0 2px 0 ${theme.colors.secondaryColor},
-            0 -2px 0 ${theme.colors.secondaryColor}, 1px 1px ${theme.colors.secondaryColor}, -1px -1px 0 ${theme.colors.secondaryColor},
-            1px -1px 0 ${theme.colors.secondaryColor}, -1px 1px 0 ${theme.colors.secondaryColor}`};
-    }
-    h1 span {
-        color: ${({ theme }) => theme.colors.secondaryColor};
-        text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
-            1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-    }
 `

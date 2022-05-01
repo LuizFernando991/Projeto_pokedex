@@ -9,6 +9,6 @@ export const FooterContainer = styled.footer`
     align-items: center;
     flex-direction: column;
     color: ${({ theme }) => theme.colors.white};
-    border-radius: 35px 35px 0 0;
+    border-radius: 20px 20px 0 0;
     margin-top: -40px;
 `
